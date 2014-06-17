@@ -19,7 +19,7 @@ class shiftDifferenceColumn extends DifferenceModifier
    }
     
 
-    Result.copy( myCapture, 0, 0, B.width, B.height, 0, 0, Result.width, Result.height );
+    Result.copy( B, 0, 0, B.width, B.height, 0, 0, Result.width, Result.height );
     Result.updatePixels();
 
     for ( int TravWidth = 0; TravWidth < A.width; TravWidth++ )
